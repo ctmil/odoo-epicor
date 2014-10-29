@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <menuitem
+            name="base.menu_administration/Epicor"
+            id="menu_epicor"
+            sequence="100"
+            />
+
+        <record id="action_epicor_import_import" model="ir.actions.act_window">
+            <field name="name">Import</field>
+            <field name="res_model">epicor.import</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_epicor_import_tree"/>
+            <field name="search_view_id" ref="view_epicor_import_filter"/>
+            <field name="domain">[]</field>
+        </record>
+
+        <menuitem
+            name="Import"
+            id="menu_import"
+            sequence="100"
+            action="action_epicor_import_import"
+            parent="menu_epicor"
+            />
+
+    </data>
+</openerp>
+<!-- vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4
+     -->
