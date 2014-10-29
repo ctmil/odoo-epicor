@@ -23,27 +23,27 @@
 -->
 <openerp>
     <data>
-        <record id="epicor.import_draft" model="mail.message.subtype">
+        <record id="epicor.loader_draft" model="mail.message.subtype">
 	    <field name="name">draft</field>
-	    <field name="res_model">epicor.import</field>
+	    <field name="res_model">epicor.loader</field>
             <field name="default" eval="True"/>
 	    <field name="description">draft</field>
         </record>
-        <record id="epicor.import_running" model="mail.message.subtype">
+        <record id="epicor.loader_running" model="mail.message.subtype">
 	    <field name="name">running</field>
-	    <field name="res_model">epicor.import</field>
+	    <field name="res_model">epicor.loader</field>
             <field name="default" eval="True"/>
 	    <field name="description">running</field>
         </record>
-        <record id="epicor.import_done" model="mail.message.subtype">
+        <record id="epicor.loader_done" model="mail.message.subtype">
 	    <field name="name">done</field>
-	    <field name="res_model">epicor.import</field>
+	    <field name="res_model">epicor.loader</field>
             <field name="default" eval="True"/>
 	    <field name="description">done</field>
         </record>
-        <record id="epicor.import_error" model="mail.message.subtype">
+        <record id="epicor.loader_error" model="mail.message.subtype">
 	    <field name="name">error</field>
-	    <field name="res_model">epicor.import</field>
+	    <field name="res_model">epicor.loader</field>
             <field name="default" eval="True"/>
 	    <field name="description">error</field>
         </record>

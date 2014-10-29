@@ -3,11 +3,11 @@
     <data>
 
         <!-- SEARCH VIEW -->
-        <record id="view_epicor_import_filter" model="ir.ui.view">
-            <field name="name">epicor.import.select</field>
-            <field name="model">epicor.import</field>
+        <record id="view_epicor_loader_filter" model="ir.ui.view">
+            <field name="name">epicor.loader.select</field>
+            <field name="model">epicor.loader</field>
             <field name="arch" type="xml">
-                <search string="import" version="7.0">
+                <search string="loader" version="7.0">
                     <group string="By Attribute">
                     </group>
                     <group string="By object">
@@ -17,11 +17,11 @@
         </record>
 
         <!-- FORMVIEW -->
-        <record id="view_epicor_import_form" model="ir.ui.view">
-            <field name="name">epicor.import.form</field>
-            <field name="model">epicor.import</field>
+        <record id="view_epicor_loader_form" model="ir.ui.view">
+            <field name="name">epicor.loader.form</field>
+            <field name="model">epicor.loader</field>
             <field name="arch" type="xml">
-                <form string="import" version="7.0">
+                <form string="loader" version="7.0">
                     <header>
                         <button name="sgn_execute"
                             states="draft"
@@ -39,7 +39,7 @@
                             statusbar_colors='{}'
                             />
                     </header>
-                    <sheet string="import">
+                    <sheet string="loader">
                      <group>
                      </group>
                     </sheet>
@@ -54,11 +54,11 @@
 
         <!-- TREEVIEW -->
 
-        <record id="view_epicor_import_tree" model="ir.ui.view">
-            <field name="name">epicor.import.tree</field>
-            <field name="model">epicor.import</field>
+        <record id="view_epicor_loader_tree" model="ir.ui.view">
+            <field name="name">epicor.loader.tree</field>
+            <field name="model">epicor.loader</field>
             <field name="arch" type="xml">
-                <tree string="import"
+                <tree string="loader"
                     colors="grey:state=='cancelled';blue:state in ('draft',);black:state in ('running',); red:state in ()"
                     >
                     <field name="state" />

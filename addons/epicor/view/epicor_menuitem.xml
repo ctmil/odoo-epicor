@@ -8,21 +8,21 @@
             sequence="100"
             />
 
-        <record id="action_epicor_import_import" model="ir.actions.act_window">
-            <field name="name">Import</field>
-            <field name="res_model">epicor.import</field>
+        <record id="action_epicor_loader_loader" model="ir.actions.act_window">
+            <field name="name">Loader</field>
+            <field name="res_model">epicor.loader</field>
             <field name="view_type">form</field>
             <field name="view_mode">tree,form</field>
-            <field name="view_id" ref="view_epicor_import_tree"/>
-            <field name="search_view_id" ref="view_epicor_import_filter"/>
+            <field name="view_id" ref="view_epicor_loader_tree"/>
+            <field name="search_view_id" ref="view_epicor_loader_filter"/>
             <field name="domain">[]</field>
         </record>
 
         <menuitem
-            name="Import"
-            id="menu_import"
+            name="Loader"
+            id="menu_loader"
             sequence="100"
-            action="action_epicor_import_import"
+            action="action_epicor_loader_loader"
             parent="menu_epicor"
             />
 
